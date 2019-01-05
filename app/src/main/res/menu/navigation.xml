@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/add"
+        android:orderInCategory="100"
+        android:title="add"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource"/>
+
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="delete"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource"/>
+
+    <item
+        android:id="@+id/addfile"
+        android:orderInCategory="100"
+        android:title="addfile"
+        app:showAsAction="ifRoom"
+        tools:ignore="AppCompatResource"/>
+
+</menu>

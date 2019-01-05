@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/toolbar_bg"
+        >
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/default_head"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tologin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="登陆"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp"
+            />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+
+
+        <TextView
+            android:id="@+id/vip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/largePadding"
+            android:drawableLeft="@drawable/vip"
+            android:text="会员中心"
+            android:textColor="@color/transparent"/>
+
+        <TextView
+            android:id="@+id/switch_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/mode"
+            android:gravity="center_vertical"
+            android:padding="@dimen/largePadding"
+            android:text="模式切换"
+            android:textColor="@color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_list_item"
+            android:gravity="center_vertical"
+            android:padding="@dimen/largePadding"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/cloud"
+            android:textColor="@color/transparent"
+            android:text="云端服务" />
+
+        <Button
+            android:id="@+id/set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出" />
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

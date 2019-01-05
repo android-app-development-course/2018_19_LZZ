@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wolaopo"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/toolbar_bg"
+            app:layout_scrollFlags="scroll"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_Recently"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/ic_recent_file"
+            android:text="@string/title_Recently"
+            />
+        <RadioButton
+            android:id="@+id/rb_waste"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/ic_waste"
+            android:text="回收站"
+            />
+        <RadioButton
+            android:id="@+id/rb_Personal"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/ic_personal_info"
+            android:text="设置"
+            />
+
+    </RadioGroup>
+
+
+    <View
+        android:id="@+id/div_tab_bar"
+
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/colorWhite" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_below="@id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_tab_bar"
+         />
+
+</RelativeLayout>
